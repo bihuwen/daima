@@ -1,0 +1,28 @@
+pip安装慢的解决办法
+
+阿里云镜像
+http://mirrors.aliyun.com/pypi/simple/
+豆瓣镜像
+http://pypi.douban.com/simple/
+清华大学镜像
+https://pypi.tuna.tsinghua.edu.cn/simple/
+中国科学技术大学镜像
+http://pypi.mirrors.ustc.edu.cn/simple/
+华中理工大学镜像
+http://pypi.hustunique.com/simple/
+pip 设置国内源镜像
+
+设置为临时
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple cx-Oracle
+
+
+设置为默认
+pip config set global.index-url http://mirrors.aliyun.com/pypi/simple
+pip config set global.trusted-host mirrors.aliyun.com
+直接输入上述两行 pip 配置命令，即可
+
+
+anaconda3库都是提前预装好的   包括了最全的算法库，数学库。安完以后都不需要安装库了！
+pycharm   只是一个IDE
+Anaconda 和 Pycharm 两个工具一起安装，构成完整的开发环境，是这样的一个组合
