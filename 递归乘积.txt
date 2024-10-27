@@ -1,0 +1,18 @@
+package dg;
+
+public class dg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		long jg=cj(6);
+		System.out.println(jg);
+		
+	}
+	public static long cj(long n) {
+		if(n==1) {
+			return 1;
+		}
+		return n*cj(n-1);
+		
+	}
+}
